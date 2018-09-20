@@ -55,6 +55,22 @@ public class CustomView extends View {
 
         touchX = event.getX();
         touchY = event.getY();
+
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            paint.setColor(Color.WHITE);
+        }
+
+        if(event.getAction() == MotionEvent.ACTION_UP) {
+            paint.setColor(Color.YELLOW);
+        }
+
+        if(event.getAction() == MotionEvent.ACTION_MOVE) {
+            paint.setColor(Color.RED);
+        }
+
+
+
+
         invalidate();
 
         return true;

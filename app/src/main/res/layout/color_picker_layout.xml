@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <example.jeevanson.singleviewapplication.CustomView
+        android:id="@+id/customView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/textViewRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="105dp"
+        android:layout_marginStart="47dp"
+        android:text="Red"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewRed"
+        android:layout_centerHorizontal="true"
+        android:text="Green"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewRed"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="59dp"
+        android:text="Blue"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/textFieldRed"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="145dp"
+        android:layout_marginStart="22dp"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/textFieldGreen"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textFieldRed"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/textFieldBlue"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textFieldRed"
+        android:layout_marginEnd="42dp"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Update View" />
+
+</RelativeLayout>

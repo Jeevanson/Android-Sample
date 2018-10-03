@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import example.jeevanson.customviewscreen.CustomViewActivity;
+import example.jeevanson.serviceexample.ServiceExampleActivity;
 import example.jeevanson.singleviewapplication.MainActivity;
 import example.jeevanson.singleviewapplication.R;
 
@@ -20,12 +21,15 @@ public class HomeScreenActivity extends AppCompatActivity {
 
         Button customView = (Button)findViewById(R.id.customViewBtn);
         Button colorPickerButton = (Button) findViewById(R.id.colorPickerBtn);
+        Button serviceDemoButton = (Button) findViewById(R.id.serviceDemoBtn);
+
 
         colorPickerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(HomeScreenActivity.this, MainActivity.class);
+                intent.putExtra("message","Message from HomeActivity");
                 HomeScreenActivity.this.startActivity(intent);
             }
         });
@@ -36,6 +40,15 @@ public class HomeScreenActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(HomeScreenActivity.this, CustomViewActivity.class);
+                HomeScreenActivity.this.startActivity(intent);
+            }
+        });
+
+        serviceDemoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(HomeScreenActivity.this, ServiceExampleActivity.class);
                 HomeScreenActivity.this.startActivity(intent);
             }
         });

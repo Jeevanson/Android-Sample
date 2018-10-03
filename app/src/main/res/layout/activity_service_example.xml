@@ -4,25 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_vertical"
+    android:gravity="center"
     android:orientation="vertical"
-    tools:context="example.jeevanson.homescreen.HomeScreenActivity">
+    tools:context="example.jeevanson.serviceexample.ServiceExampleActivity">
 
     <Button
-        android:id="@+id/customViewBtn"
+        android:id="@+id/startService"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CustomView" />
+        android:text="StartService" />
 
     <Button
-        android:id="@+id/colorPickerBtn"
+        android:id="@+id/stopServiceBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ColorPicker" />
-
-    <Button
-        android:id="@+id/serviceDemoBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ServiceDemo" />
+        android:text="Stop Service" />
 </LinearLayout>

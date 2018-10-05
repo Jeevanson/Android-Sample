@@ -18,8 +18,11 @@
             </intent-filter>
         </activity>
         <activity android:name="example.jeevanson.customviewscreen.CustomViewActivity" />
-        <activity android:name="example.jeevanson.serviceexample.ServiceExampleActivity"></activity>
-        <service android:name="example.jeevanson.serviceexample.MyService"></service>
+        <activity android:name="example.jeevanson.serviceexample.ServiceExampleActivity" />
+
+        <service android:name="example.jeevanson.serviceexample.MyService" />
+
+        <activity android:name="example.jeevanson.boundserviceexample.BoundServiceDemoActivity"></activity>
     </application>
 
 </manifest>

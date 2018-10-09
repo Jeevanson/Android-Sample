@@ -22,7 +22,8 @@
 
         <service android:name="example.jeevanson.serviceexample.MyService" />
 
-        <activity android:name="example.jeevanson.boundserviceexample.BoundServiceDemoActivity"></activity>
+        <activity android:name="example.jeevanson.boundserviceexample.BoundServiceDemoActivity" />
+        <activity android:name="example.jeevanson.broadcastreceiverdemo.BroadCastReceiverDemoActivity"></activity>
     </application>
 
 </manifest>

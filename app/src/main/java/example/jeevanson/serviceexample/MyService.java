@@ -8,6 +8,8 @@ import android.widget.Toast;
 
 import java.sql.SQLOutput;
 
+import example.jeevanson.broadcastreceiverdemo.BroadCastReceiverDemoActivity;
+
 public class MyService extends Service {
 
     boolean doWork;
@@ -21,8 +23,10 @@ public class MyService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
+
         Toast.makeText(this,"Service Created",Toast.LENGTH_LONG).show();
         System.out.println("Service Created");
+
     }
 
     @Override
@@ -32,6 +36,10 @@ public class MyService extends Service {
         doWork();
         System.out.println("Service Started");
         Toast toast = Toast.makeText(this,"Service Started",Toast.LENGTH_LONG);
+
+        Intent i = new Intent();
+        i.setAction("jeevan.Custom_Action");
+        sendBroadcast(i);
 
         return super.onStartCommand(intent, flags, startId);
     }

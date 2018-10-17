@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import example.jeevanson.boundserviceexample.BoundServiceDemoActivity;
 import example.jeevanson.customviewscreen.CustomViewActivity;
+import example.jeevanson.relativelayoutdemo.RelativeLayoutDemoActivity;
 import example.jeevanson.serviceexample.ServiceExampleActivity;
 import example.jeevanson.singleviewapplication.MainActivity;
 import example.jeevanson.singleviewapplication.R;
@@ -24,6 +25,7 @@ public class HomeScreenActivity extends AppCompatActivity {
         Button colorPickerButton = (Button) findViewById(R.id.colorPickerBtn);
         Button serviceDemoButton = (Button) findViewById(R.id.serviceDemoBtn);
         Button boundServiceDemoButton = (Button) findViewById(R.id.boundServiceDemoBtn);
+        Button relativeLayoutDemo = (Button) findViewById(R.id.relativelayoutBtnId);
 
 
         colorPickerButton.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +62,15 @@ public class HomeScreenActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(HomeScreenActivity.this, BoundServiceDemoActivity.class);
+                HomeScreenActivity.this.startActivity(intent);
+            }
+        });
+
+        relativeLayoutDemo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(HomeScreenActivity.this, RelativeLayoutDemoActivity.class);
                 HomeScreenActivity.this.startActivity(intent);
             }
         });

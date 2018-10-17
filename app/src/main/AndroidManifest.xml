@@ -22,9 +22,11 @@
 
         <service android:name="example.jeevanson.serviceexample.MyService" />
 
-        <activity android:name="example.jeevanson.boundserviceexample.BoundServiceDemoActivity"></activity>
-        <service android:name="example.jeevanson.boundserviceexample.MyBindService"></service>
+        <activity android:name="example.jeevanson.boundserviceexample.BoundServiceDemoActivity" />
 
+        <service android:name="example.jeevanson.boundserviceexample.MyBindService" />
+
+        <activity android:name="example.jeevanson.relativelayoutdemo.RelativeLayoutDemoActivity"></activity>
     </application>
 
 </manifest>

@@ -43,7 +43,5 @@ public class ServiceExampleActivity extends AppCompatActivity implements View.On
                 break;
         }
 
-
-
     }
 }

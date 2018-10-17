@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="example.jeevanson.singleviewapplication">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -22,9 +23,11 @@
 
         <service android:name="example.jeevanson.serviceexample.MyService" />
 
-        <activity android:name="example.jeevanson.boundserviceexample.BoundServiceDemoActivity"></activity>
-        <service android:name="example.jeevanson.boundserviceexample.MyBindService"></service>
+        <activity android:name="example.jeevanson.boundserviceexample.BoundServiceDemoActivity" />
 
+        <service android:name="example.jeevanson.boundserviceexample.MyBindService" />
+
+        <activity android:name="example.jeevanson.restDemo.RestDemoActivity"></activity>
     </application>
 
 </manifest>

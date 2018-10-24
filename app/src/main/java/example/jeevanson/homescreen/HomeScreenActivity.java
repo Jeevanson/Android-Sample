@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import example.jeevanson.asynctaskdemo.AsynctaskDemoActivity;
 import example.jeevanson.boundserviceexample.BoundServiceDemoActivity;
 import example.jeevanson.customviewscreen.CustomViewActivity;
 import example.jeevanson.serviceexample.ServiceExampleActivity;
@@ -24,6 +25,7 @@ public class HomeScreenActivity extends AppCompatActivity {
         Button colorPickerButton = (Button) findViewById(R.id.colorPickerBtn);
         Button serviceDemoButton = (Button) findViewById(R.id.serviceDemoBtn);
         Button boundServiceDemoButton = (Button) findViewById(R.id.boundServiceDemoBtn);
+        Button asyncTaskDemoButton = (Button) findViewById(R.id.asyncTaskDemoBtn);
 
 
         colorPickerButton.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +62,15 @@ public class HomeScreenActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(HomeScreenActivity.this, BoundServiceDemoActivity.class);
+                HomeScreenActivity.this.startActivity(intent);
+            }
+        });
+
+        asyncTaskDemoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(HomeScreenActivity.this, AsynctaskDemoActivity.class);
                 HomeScreenActivity.this.startActivity(intent);
             }
         });
